@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dice Roller</title>
+</head>
+<body>
+    <h1>Random Dice Roller</h1>
+    <p>Click the button to roll the die:</p>
+    <button onclick="rollDice()">Roll the Die</button>
+    <p id="result">Result: </p>
+
+    <script>
+        function rollDice() {
+            
+            const randomNumber = Math.floor(Math.random() * 6) + 1;
+
+            
+            const resultElement = document.getElementById('result');
+            resultElement.textContent = 'Result: ' + randomNumber;
+        }
+    </script>
+</body>
+</html>
